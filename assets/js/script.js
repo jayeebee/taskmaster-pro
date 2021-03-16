@@ -117,8 +117,8 @@ $(".list-group").on("blur", "input[type='text']", function() {
   .closest(".list-group-item")
   .index();
   
-  //update rask in array and re-save to local storage
-  tasks[status][index].date = date;
+  //update task in array and re-save to local storage
+  tasks[status].date = date;
   saveTasks();
   
   //recreate span element with bootstrap classes
